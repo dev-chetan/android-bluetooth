@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ChatActivity">
+
+        <TextView
+            android:id="@+id/activity_chat_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/activity_chat_messages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/activity_chat_hello_world"
+            android:layout_below="@+id/activity_chat_status"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:scrollbars="vertical"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/activity_chat_hello_world"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="@string/helloWorld" />
+
+    </RelativeLayout>
+</layout>
