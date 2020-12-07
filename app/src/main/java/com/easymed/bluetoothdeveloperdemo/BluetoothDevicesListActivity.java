@@ -89,6 +89,7 @@ public class BluetoothDevicesListActivity extends AppCompatActivity implements V
         binding.rvAvailableDevices.setLayoutManager(new LinearLayoutManager(this));
         binding.rvAvailableDevices.setAdapter(availableDeviceAdapter);
 
+
         availableDeviceAdapter.setOnItemClickListener(new PairedDeviceAdapter.OnItemClickListener() {
             @Override
             public void onItemClick(BluetoothDevice device) {
